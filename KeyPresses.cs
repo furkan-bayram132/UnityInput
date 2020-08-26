@@ -6,9 +6,9 @@ public class KeyPresses : MonoBehaviour
 {
     [SerializeField] List<KeyCode> desiredKeys;
 
-    public Dictionary<KeyCode, bool> KeysBeingPressed { get; }
-    public Dictionary<KeyCode, bool> KeysWasPressed { get; }
-    public Dictionary<KeyCode, bool> KeysWasReleased { get; }
+    public Dictionary<KeyCode, bool> KeysBeingPressed { get; set; }
+    public Dictionary<KeyCode, bool> KeysWasPressed { get; set; }
+    public Dictionary<KeyCode, bool> KeysWasReleased { get; set; }
 
     void Awake()
     {
